@@ -13,9 +13,9 @@
 </head>
 
 <body class="bg-slate-100 ">
-  <full-section class="w-250 h-full relative">
+  <full-section class="w-screen h-full relative  ">
   <header class="border-b  border-gray-300">
-    <nav class="mx-4 my-5  ">
+    <nav class="lg:mx-4 px-1 md:px-5 my-2 lg:my-5  ">
       <div class="bg-slate-100 flex justify-between h-8">
 
         <!-- nav-bar-part-1 -->
@@ -36,12 +36,13 @@
         </div>
 
         <!-- nav-bar-part-2 -->
-        <div class="flex gap-3 relative cursor-pointer">
-          <div class="border border-slate-300 flex items-center rounded-md py-0.5 ">
+        <div class="flex gap-3 relative cursor-pointer ">
+          <div class="border border-slate-300 flex items-center rounded-md  p-1 ">
             <img src="./src/assets/search-svgrepo-com.svg" width="15px" class="ml-1" alt="">
-            <input type="text" name="" class="border-0 w-60 outline-0 placeholder:text-sm ml-2"
+            <input type="text" name="" class="hidden lg:flex border-0 w-60 outline-0 placeholder:text-sm ml-2"
               placeholder="  Type to search">
           </div>
+          <div class="hidden md:flex gap-2 ">
           <div class="flex gap-2 border border-gray-300 rounded-md items-center   ">
             <div class="flex  emg ">
               <svg width="35px" class="border-r border-gray-300 p-2 " viewBox="0 0 512 416"
@@ -114,7 +115,7 @@
 
           <div class=" flex border border-gray-300 rounded-md px-1 emg">
             <img src="src/assets/git-pull-request-svgrepo-com.svg" width="20px" alt="">
-            <div class="hide-mg bg-black text-white rounded-md p-1 text-xs absolute right-10 -bottom-8">
+            <div class="hide-mg bg-black text-white rounded-md p-1 text-xs absolute right-25 -bottom-8">
               <p>
                 Your pull requests
 
@@ -142,7 +143,7 @@
             </div>
 
 
-
+           </div>
 
           <div class="emg relative flex   px-1.5 ">
             <div class=" flex border border-gray-300 rounded-md px-1.5  items-center  ">
@@ -186,14 +187,15 @@
     <nav class="flex text-xs items-center relative ">
 
       <div
-        class="flex ml-5  font-bold text-2xs  hover:bg-gray-200 rounded-t-md  px-2 py-1  border-b-3 pb-4 border-orange-400">
+        class="flex ml-5  font-bold text-2xs  hover:bg-gray-200 rounded-t-md  px-2 py-1  border-b-3  border-orange-400">
         <button class="flex gap-2"><img src="src/assets/open-book-svgrepo-com.svg" alt="" width="20px">Overview
         </button>
       </div>
-
+  
+      <div class="hidden lg:flex">
       <div class="flex ml-5 gap-2  items-center  hover:bg-gray-200 rounded-md  px-2 py-1 ">
         <button class="flex  items-center  "> <svg width="34px" class="  border-gray-300 p-2 fill-gray-500 "
-              aria-hidden="true"  viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo UnderlineNav-octicon">
+              aria-hidden="true"  viewBox="0 0 16 16" version="1.1" width="20px" data-view-component="true" class="octicon octicon-repo UnderlineNav-octicon">
                         <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path>
                     </svg>Repositories
         </button>
@@ -205,7 +207,7 @@
 
       <div class="flex ml-5   items-center  hover:bg-gray-200 rounded-md  px-3 py-2 ">
         <button class="flex gap-2 items-center fill-gray-500 "><svg aria-hidden="true" height="16" viewBox="0 0 16 16"
-            version="1.1" width="16" data-view-component="true" class="octicon octicon-table UnderlineNav-octicon">
+            version="1.1" width="20px" data-view-component="true" class="octicon octicon-table UnderlineNav-octicon">
             <path
               d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25ZM6.5 6.5v8h7.75a.25.25 0 0 0 .25-.25V6.5Zm8-1.5V1.75a.25.25 0 0 0-.25-.25H6.5V5Zm-13 1.5v7.75c0 .138.112.25.25.25H5v-8ZM5 5V1.5H1.75a.25.25 0 0 0-.25.25V5Z">
             </path>
@@ -214,7 +216,7 @@
       </div>
 
       <div class="flex ml-5   items-center  hover:bg-gray-200 rounded-md  pr-3 ">
-        <button class="flex gap-2 items-center"><img src="src/assets/box-svgrepo-com.svg" alt="" width="25px">Packages
+        <button class="flex gap-2 items-center"><img src="src/assets/box-svgrepo-com.svg" alt="" width="20px">Packages
         </button>
       </div>
 
@@ -225,7 +227,7 @@
           <h1>75</h1>
 
         </div>
-
+</div>
       </div>
     </nav>
 
@@ -233,16 +235,16 @@
 
   <!-- Hero-section -->
 
-  <section class="flex gap-10 justify-around px-10  bg-white ">
+  <section class="flex flex-col md:flex-row gap-10 justify-around  md:px-10  md:items-start  bg-white  ">
 
 
-    <div class=" mt-10 w-100 ml-5 ">
+    <div class="w-screen mt-10 md:w-100 ml-0 lg:ml-5 px-5">
       <div class="flex ml-5  ">
          
-        <div class=" ">
-          <img src="https://avatars.githubusercontent.com/u/15264938?v=4" class="rounded-full w-80  " alt="profile-image">
+        <div class="w-fit ">
+          <img src="https://avatars.githubusercontent.com/u/15264938?v=4" class="rounded-full lg:w-80 w-50 " alt="profile-image">
           <div
-            class="emg flex items-center absolute left-80 top-87 z-1   bg-gray-100 rounded-full p-2 text-xs border border-gray-300  w-fit  ">
+            class="emg hidden lg:flex items-center absolute md:left-80 md:top-87 z-1   bg-gray-100 rounded-full p-2 text-xs border border-gray-300  w-fit  ">
             😎
             <div class="hide-mg bg-gray-100 rounded-full ml-2  ">
               <p> Creating new stuffs.</p>
@@ -253,9 +255,9 @@
         </div>
       </div>
 
-      <div class="mt-3 mb-4">
-        <h1 class="text-2xl font-medium text-gray-800">Anbuselevan Annamalai</h1>
-        <p class=" text-xl font-extralight  text-gray-500">anburocky3 · he/him</p>
+      <div class="mt-3 mb-4 text-xl">
+        <h1 class=" md:text-2xl font-medium text-gray-800">Anbuselevan Annamalai</h1>
+        <p class=" md:text-xl font-extralight  text-gray-500">anburocky3 · he/him</p>
 
       </div>
       <div class="flex gap-2">
@@ -446,26 +448,26 @@
 
     <!-- hero-right-section -->
 
-    <div class="relative">
+    <div class="relative w-screen">
 
-      <div class="border border-gray-300  rounded-md  mt-8 p-8">
+      <div class="border border-gray-300  rounded-md  mt-8 p-8 ">
         <div class="text-xs">
           <span class="cursor-pointer font-light font-mono hover:text-blue-600">anburocky3</span>
           /README.md
         </div>
         <div class="flex">
-          <h1 class="text-4xl pt-5">Hey, I'm Anbuselvan</h1>
+          <h1 class="text-xl lg:text-4xl pt-5">Hey, I'm Anbuselvan</h1>
           <img
             src="https://camo.githubusercontent.com/33fa1ecbfc674cb894fee42114ce8034fc32529090afc1ef7ef03b2d45c87271/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f6876524a434c467a6361737252346961377a2f67697068792e676966"
             data-canonical-src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif"
-            data-target="animated-image.originalImage" class="w-15 pl-2">
+            data-target="animated-image.originalImage" class="w-7 lg:w-15 lg:pl-2">
         </div>
         <div class="border-b border-gray-200 pt-3"></div>
         I'm a software development engineer. I like to work with Laravel,
         NodeJS and Python. I love Linux Kernel based OSs such as Ubuntu,
         ArchLinux and CentOS. I'm open-source development enthusiast.
 
-        <div class="flex flex-row items-center gap-x-3 pt-4 ">
+        <div class="flex flex-row items-center gap-x-3 pt-4 flex-wrap gap-2 ">
           <a href="">
             <img
               src="https://camo.githubusercontent.com/cbaab5f6c6902784db911ac57524a664350471eced33945681aa9c19bc53d212/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f666f6c6c6f776572732f616e6275726f636b79333f6c6162656c3d466f6c6c6f77267374796c653d736f6369616c"
@@ -531,7 +533,7 @@
 
 
         </div>
-        <div class="text-gray-600 p-5 space-y-3 border-b border-gray-300 ">
+        <div class="text-gray-600 p-5 space-y-3 border-b border-gray-300  ">
           <h1 class="text-3xl font-medium pt-3">💻 Tech Stack:</h1>
           <div class="border-b pt-1 border-gray-300"></div>
           <h1 class="text-xl font-medium pt-3">Design</h1>
@@ -541,7 +543,7 @@
             data-canonical-src="https://skillicons.dev/icons?i=ae,ai,au,figma,pr,ps,xd&amp;theme=light"
             style="max-width: 100%;">
           <h1 class="text-xl font-medium pt-3">Multi-Purpose</h1>
-          <a href="">
+          <a href="" class="flex">
             <img class="pt-3"
               src="https://camo.githubusercontent.com/82c6c5042ef5287c5e96d012628b6ca3aca72bc7f4c8838631efb82179155308/68747470733a2f2f736b696c6c69636f6e732e6465762f69636f6e733f693d632c636d616b652c6370702c646172742c676f2c707974686f6e267468656d653d6c69676874"
               alt="My Graphic Skills"
@@ -645,6 +647,7 @@
           </svg>
          </div>
          <p>© 2025 GitHub, Inc.</p>
+         <div class="hidden lg:flex">
          <a class="hover:underline hover:text-blue-600">Terms</a>
          <a class="hover:underline hover:text-blue-600" href="">Privacy</a>
          <a class="hover:underline hover:text-blue-600" href="">Security</a>
@@ -654,7 +657,7 @@
          <a class="hover:underline hover:text-blue-600" href="">Contact</a>
          <a class="hover:underline hover:text-blue-600" href="">Manage cookies</a>
          <a class="hover:underline hover:text-blue-600" href="">Do not share my personal information</a>
-
+         </div>
           
   </div>
 </footer>
